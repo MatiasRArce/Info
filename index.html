@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Presentación</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+</head>
+<body class="scroll">
+
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a class="navegacion__enlace" href="#presentacion">
+                <h2 class="navegacion__titulo">Informatorio</h2>
+            </a>
+            <ul class="enlaces">
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#sobre-mi">Sobre Mí</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section class="presentacion" id="presentacion" style="background-image: url('./assets/images/profile/portada1.jpg');">
+            <div class="presentacion__contenedor_info">
+                <h1 class="presentacion__titulo">Desarrollador Web</h1>
+                <p class="presentacion__parrafo">Estudiante de desarrollo web.</p>
+                <div class="presentacion__contenedor_botones">
+                    <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
+                    <a href="./assets/docs/CVMatiasArce.pdf"
+                       target="_blank" class="boton boton_oscuro"
+                       role="button">Descargar Curriculum</a>
+                </div>
+            </div>
+        </section>
+        <article class="articulo sobre_mi" id="sobre-mi">
+            <h2 class="articulo__titulo">Un poco sobre mí</h2>
+            <div class="articulo__contenedor_descripciones">
+                <section class="seccion_descripcion">
+                    <div class="seccion_descripcion__porta_retrato">
+                        <img class="seccion_descripcion__imagen"
+                             src="./assets/images/profile/sobremi.jpg"
+                             alt="electricidad"
+                             title="electricidad" />
+                    </div>
+                    <div class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                         aria-label="descripcion personal">
+                        <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                            Mi historia
+                        </h3>
+                        <p class="seccion_descripcion__parrafo"
+                           aria-label="Detalles de mi historia"
+                           aria-describedby="mi_historia_titulo">
+                            Soy un técnico electromecánico con una sólida trayectoria de 12 años en el campo de la electricidad, especializado en instalaciones domiciliarias y en pequeñas industrias. Además, poseo 6 años de experiencia específica en refrigeración, con enfoque en sistemas de aire acondicionado. Como trabajador autónomo, he desarrollado habilidades en electricidad, refrigeración, carpintería y herrería, ofreciendo servicios de calidad y adaptándome a las necesidades de mis clientes.
+                        </p>
+                    </div>
+                </section>
+                <section class="seccion_descripcion">
+                    <div class="seccion_descripcion__info scroll scroll_fino scroll_gris">
+                        <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                            Mis hobbies
+                        </h3>
+                        <p class="seccion_descripcion__parrafo"
+                           aria-label="Detalles de mis hobbies"
+                           aria-describedby="mis_hobbies_titulo">
+                            Me apasiona el fútbol y disfruto de la mecánica automovilística. Pasar tiempo jugando al fútbol con amigos o aprendiendo sobre motores y vehículos son actividades que me permiten desconectar y disfrutar de mis ratos libres.
+                        </p>
+                    </div>
+                    <div class="seccion_descripcion__porta_retrato">
+                        <img class="seccion_descripcion__imagen"
+                             src="./assets/images/profile/hobbi.jpg"
+                             alt="autos"
+                             title="autos" />
+                    </div>
+                </section>
+            </div>
+        </article>
+        <article class="articulo proyectos" id="proyectos">
+            <h2 class="articulo__titulo">Mis proyectos</h2>
+            <div class="contenedor_tarjetas_grid">
+                <article class="tarjeta"
+                         aria-label="presentacion de proyecto personal">
+                    <img class="tarjeta__imagen"
+                         src="./assets/images/profile/calculadora.jpg"
+                         alt="imagen de una calculadora"
+                         title="Calculadora" />
+                    <div class="tarjeta__contenido">
+                        <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Calculadora</h3>
+                        <span class="tarjeta__divisor"></span>
+                        <p class="tarjeta__parrafo scroll scroll_fino"
+                           aria-label="descripcion de proyecto personal"
+                           aria-describedby="titulo_proyecto_1">
+                            Desarrollé de una calculadora básica con funciones estándar como suma, resta, multiplicación y división.
+                        </p>
+                        <a href="#" class="boton" target="_blank">Ver proyecto</a>
+                    </div>
+                </article>
+                <article class="tarjeta"
+                         aria-label="presentacion de proyecto personal">
+                    <img class="tarjeta__imagen"
+                         src="./assets/images/profile/cv.webp"
+                         alt="imagen de una calculadora"
+                         title="Calculadora" />
+                    <div class="tarjeta__contenido">
+                        <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Calculadora</h3>
+                        <span class="tarjeta__divisor"></span>
+                        <p class="tarjeta__parrafo scroll scroll_fino"
+                           aria-label="descripcion de proyecto personal"
+                           aria-describedby="titulo_proyecto_1">
+                            Desarrollé de una página personal que presenta información sobre mí.
+                        </p>
+                        <a href="#" class="boton" target="_blank">Ver proyecto</a>
+                    </div>
+                </article>
+            </div>
+        </article>
+    </main>
+
+    <footer class="pie_de_pagina" role="contentinfo">
+        <div class="pie_de_pagina__columna">
+            <h4 class="pie_de_pagina__titulo_columna">Contacto</h4>
+            <ul class="enlaces enlaces_vertical">
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace enlaces__enlace_footer"
+                       href="mailto:matiasrodrigoarce@gmail.com"
+                       target="_blank">Correo: matiasrodrigoarce@gmail.com</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace enlaces__enlace_footer"
+                       href="tel:3644662831"
+                       target="_blank">Celular: 3644662831</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pie_de_pagina__columna" role="navigation">
+            <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+            <ul class="enlaces enlaces_vertical">
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace enlaces__enlace_footer"
+                       href="#presentacion">Inicio</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi">Sobre mí</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos">Proyectos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pie_de_pagina__copyright">
+            <p>©️ 2024 Matías Rodrigo Arce</p>
+        </div>
+    </footer>
+
+</body>
+</html>
